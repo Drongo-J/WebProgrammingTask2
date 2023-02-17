@@ -1,0 +1,448 @@
+/* Imports Start */
+@import url('https://fonts.googleapis.com/css2?family=Raleway&family=Righteous&family=Rubik&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Raleway&family=Righteous&family=Rubik&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Raleway&family=Righteous&family=Rubik&display=swap');
+/* Imports End */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Main Header Start */
+.main-header {
+    height: 10%;
+    background-color: #1f1f1f;
+    padding: 40px 30px 70px 40px;
+}
+
+.headline a {
+    text-decoration: none;
+    color: white;
+}
+
+.headline h1 {
+    color: whitesmoke;
+    float: left;
+    font-family: 'Righteous', cursive;
+    text-transform: uppercase;
+    letter-spacing: 0.5em;
+    font-size: 25px;
+}
+
+.button {
+    text-decoration: none;
+    float: right;
+    border-radius: 30px;
+    padding: 10px 20px;
+    background-color: #333;
+    border: 1px solid whitesmoke;
+    color: whitesmoke;
+    cursor: pointer;
+    top: 37px;
+}
+
+.task-1 {
+    height: 100%;
+}
+
+/* Main Header End */
+
+/* Main Main Start */
+.main-main {
+    height: 89vh;
+    background-color: #F0F3F8;
+}
+
+/* Main Main End */
+
+
+/* Main Footer Start */
+.main-footer {
+    background-color: #1f1f1f;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    object-fit: center/cover;
+}
+
+.main-footer a,
+p {
+    text-decoration: none;
+    color: white;
+}
+
+/* Main Footer End */
+
+/* Sub Header Start */
+
+.sub-header {
+    background-color: #35464F;
+    height: 70px;
+}
+
+.bar {
+    width: 30px;
+    height: 30px;
+    display: none;
+}
+
+.form {
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    align-items: center;
+}
+
+.radio-buttons {
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.spacer {
+    height: 0;
+    flex: 1;
+}
+
+.radio-container input[type="radio"] {
+    display: none;
+    height: 100%;
+}
+
+.radio-container {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    cursor: pointer;
+    height: 100%;
+    margin: auto;
+    margin-left: 30px;
+    box-sizing: border-box;
+}
+
+.radio-container svg {
+    width: 25px;
+    height: 25px;
+    margin-right: 10px;
+    stroke: #B4BABE;
+    stroke-width: 2;
+}
+
+.radio-container path {
+    stroke: #B4BABE;
+    stroke-width: 2;
+}
+
+.triangle {
+    position: absolute;
+    bottom: 0;
+    left: 40%;
+    stroke: #F0F4F7;
+    fill: #F0F4F7;
+    transform: rotate(180deg);
+}
+
+/* Style the label text */
+.label-text {
+    color: #B4BABE;
+    margin-left: 0px;
+    font-family: 'Inter', sans-serif;
+    font-size: larger;
+}
+
+/* Style the radio button when it is checked */
+.radio-container input[type="radio"]:checked+svg circle {
+    stroke: #5AF4FF;
+}
+
+.radio-container input[type="radio"]:checked+svg path {
+    stroke: #5AF4FF;
+}
+
+/* Style the label text when the radio button is checked */
+.radio-container input:checked~.label-text {
+    color: white
+}
+
+/* hide the triangle when the radio button is checked */
+.radio-container input:not(:checked)~.triangle {
+    display: none;
+}
+
+
+/* Style the radio button when it is hovered */
+.radio-container input[type="radio"]:not(:checked):hover+svg path {
+    stroke: #5AF4FF;
+}
+
+.radio-container input[type="radio"]:not(:checked)+.triangle {
+    display: none;
+}
+
+/* Sub Header End */
+
+
+/* Sub Main Start */
+
+.sub-main {
+    padding-top: 10px;
+    background-color: #F0F4F7;
+    display: flex;
+    flex-direction: row;
+}
+
+.sub-main> :nth-child(1) {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.form2 {
+    z-index: 0;
+    height: 60px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.radio-container2 {
+    color: black;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    cursor: pointer;
+    height: 100%;
+    margin: 0;
+    margin-left: 30px;
+    box-sizing: border-box;
+}
+
+.count {
+    border-radius: 20px;
+    background-color: #B4BABE;
+    padding: 2px 9px 1px 9px;
+    color: white;
+    margin-left: 8px;
+    font-family: 'Arimo', sans-serif;
+}
+
+.text {
+    color: black;
+    font-family: 'Inter', sans-serif;
+    font-size: larger;
+}
+
+input[type="radio"] {
+    display: none;
+}
+
+.sp {
+    padding-bottom: 10px;
+}
+
+.radio-container2 input[type="radio"]:checked~.sp {
+    border-bottom: 3px solid #47ABE5;
+}
+
+.radio-container2 input[type="radio"]:checked~.count {
+    background-color: #47ABE5;
+}
+
+.add-person-btn {
+    cursor: pointer;
+    border: 0px;
+    height: 65%;
+    margin-top: 5px;
+    margin-left: 30px;
+    display: flex;
+    padding-left: 20px;
+    padding-right: 20px;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #4BAFE5;
+    border-radius: 20px;
+}
+
+.add-person-btn:hover {
+    background-color: #298ABE;
+}
+
+.add-person-btn> :nth-child(1) {
+    font-size: 1.2em;
+    font-family: 'Inter', sans-serif;
+    color: #2E88BC;
+}
+
+.add-person-btn> :nth-child(2) {
+    font-size: 1.2em;
+    margin-left: 10px;
+    margin-top: 3px;
+    font-family: 'Itner', sans-serif;
+    color: white;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+/* Sub Main End */
+
+
+/* Media Queries Start */
+
+@media only screen and (max-width: 780px) {
+
+    .headline a,
+    h1 {
+        letter-spacing: 0;
+    }
+
+    .button {
+        position: absolute;
+        right: 20px;
+    }
+
+    .form {
+        display: none;
+    }
+
+    .bar {
+        display: inline-block;
+        margin: 35px;
+    }
+
+    .sub-header:hover .bar {
+        display: none;
+    }
+
+    .sub-header:hover .form {
+        display: flex;
+        flex-direction: column;
+        color: white;
+        transition: 1s;
+        width: 100%;
+        height: calc(auto + 50px);
+    }
+
+    .sub-header:hover .radio-container {
+        z-index: 1;
+        background-color: #35464F;
+        padding: 15px;
+        margin: auto;
+        margin-left: 0px;
+        display: inline-block;
+        width: 100%;
+        transition: color, background-color 1s;
+    }
+
+    .sub-header:hover .icon {
+        margin: auto;
+        position: relative;
+        top: 3px;
+        margin-left: 5px;
+    }
+
+    .sub-header:hover .label-text {
+        margin: auto;
+        position: relative;
+        top: -1px;
+        margin-left: 7px;
+    }
+
+    .sub-header:hover .triangle .sub-main{
+        display: none;
+    }
+}
+
+@media only screen and (max-width:745px) {
+    .sub-main>:nth-child(1) {
+        width: 100%;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    .add-person-btn {
+        margin: auto;
+        padding: 20px;
+    }
+
+    .radio-buttons2, form2{
+        width: 100%;
+    }
+
+    .button-section {
+        padding: 10px;
+    }
+
+}
+
+@media only screen and (max-width: 550px)
+{
+    .sub-main>:nth-child(1) {
+        width: 100%;
+        text-align: center;
+        flex-direction: column;
+    }
+
+    .count{
+        margin: auto
+    }
+    .text{
+        margin: auto;
+    }
+
+    .sp{
+        padding: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .radio-buttons2{
+        margin: 0;
+        justify-content: space-around;
+    }
+
+    .form2{
+        justify-content: space-around;
+    }
+
+    .radio-container2{
+        margin: 0;
+    }
+}
+
+
+
+@media only screen and (max-width:280px) {
+    .main-header {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .headline {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+    }
+
+    .button {
+        position: absolute;
+        margin: 50px 42px;
+    }
+
+    .radio-container2{
+        margin-left: 10px;
+    }
+}
+
+/* Media Queries End */
